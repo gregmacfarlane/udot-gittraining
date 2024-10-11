@@ -1,0 +1,36 @@
+---
+title: "UDOT GitHub Training"
+author: "Greg Macfarlane"
+format: 
+  revealjs:
+    logo: images/byu_cce.png
+---
+
+# Why we use Git
+
+## Problem 1: Version Tracking
+How many of you have ended up here?
+
+```sh
+mydocument.docx
+mydocument_final.docx
+mydocument_final_commentsGSM.docx
+mydocument_final_commentsSHA.docx
+mydocument_really_final.docx
+mydocument_really_final_gsmedit again.docx
+```
+
+Google docs has made this better, but still not perfect.
+
+## Problem 2: Branching
+
+You have started building the next version of your travel model when you get a report of a bug that needs to be fixed immediately. You have already made lots of changes to the part of the code where the bug is.
+
+1. Throw away the work you are doing on the next version so that you can fix the bug as soon as possible.
+2. Fix the bug alongside everything else, and give your users a fix in the next version.
+
+## Problem 3: Collaboration
+
+Chris is working on new code for transit network skimming. Hayden is working on a new external zone design. Neither can wait for the other to be done, but they may need to edit similar files in the travel demand model.
+
+
