@@ -137,6 +137,8 @@ Go to <https://github.com/gregmacfarlane/udot-gittraining>
 
 Push the "fork" button at the top-right, and fork it to your own account.
 
+![](images/fork_repo.png)
+
 ## Clone this repository
 
 1. Open GitHub Desktop
