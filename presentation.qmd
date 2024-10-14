@@ -6,9 +6,36 @@ format:
     logo: images/byu_cce.png
 ---
 
+
+## Outcomes
+
+1. Understand and describe the purpose of version control in transportation analysis projects.
+
+2. Create a git repository and commit changes to text files using the command line as well as third-party graphical git clients.
+
+3. Use GitHub to collaborate with others on a shared project.
+
+
+## Setup
+:::: {.columns}
+
+::: {.column width="50%"}
+### Needed
+![Git](images/Git-Logo-2Color.png){height=150}
+
+![GitHub / GitHub Desktop](images/GitHub_Logo.png){height=150}
+:::
+
+::: {.column width="50%"}
+### Not needed, but I am going to use
+![Visual Studio Code](images/vscode.png){height=200}
+:::
+
+::::
+
 # Why we use Git
 
-## Problem 1: Version Tracking
+## Problem 1
 How many of you have ended up here?
 
 ```sh
@@ -22,15 +49,76 @@ mydocument_really_final_gsmedit again.docx
 
 Google docs has made this better, but still not perfect.
 
-## Problem 2: Branching
+## Solution: Version Tracking
+
+
+
+## Problem 2
 
 You have started building the next version of your travel model when you get a report of a bug that needs to be fixed immediately. You have already made lots of changes to the part of the code where the bug is.
 
 1. Throw away the work you are doing on the next version so that you can fix the bug as soon as possible.
-2. Fix the bug alongside everything else, and give your users a fix in the next version.
+2. Fix the bug alongside everything else, and give your users a fix in the next version. Whenever that is.
 
-## Problem 3: Collaboration
+## Solution: Branching 
+
+## Problem 3
 
 Chris is working on new code for transit network skimming. Hayden is working on a new external zone design. Neither can wait for the other to be done, but they may need to edit similar files in the travel demand model.
+
+1. Flip coins to see who will go first. Surely the other person can work on something else?
+2. Create a check-out system that prevents two people from editing the code at the same time.
+
+
+## Solution: Distributed Branches
+
+
+
+## Review
+
+1. What problem does version control solve?
+1. Is there a project you have worked on that would benefit from version control?
+
+# Tutorial
+
+<!-- The first tutorial has them create a new repository on the command line, add a README file to it, and then push to gitHub.-->
+## Create a repository
+
+Create a new folder, and then start a terminal (git-bash) from inside that folder.
+```sh
+# make this folder a git repository
+git init
+```
+
+## Add a text file to the respository
+
+```sh
+# start a README file
+touch README.md
+```
+Edit the file using a text editor. 
+
+```sh
+# check the repository status
+git status
+```
+
+## Stage and commit your changes
+
+```sh
+git add REAME.md
+git commit -m "Add initial README file"
+git status
+```
+
+# Learning more
+
+## Tutorials
+
+Linkedin Learning / DataCamp
+
+Atlassian: <https://www.atlassian.com/git/tutorials>^[Most images came from these tutorials.]
+
+GitHub: <https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources>
 
 
