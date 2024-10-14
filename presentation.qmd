@@ -52,26 +52,38 @@ Google docs has made this better, but still not perfect.
 ## Solution: Version Tracking
 
 
-
 ## Problem 2
-
-You have started building the next version of your travel model when you get a report of a bug that needs to be fixed immediately. You have already made lots of changes to the part of the code where the bug is.
-
-1. Throw away the work you are doing on the next version so that you can fix the bug as soon as possible.
-2. Fix the bug alongside everything else, and give your users a fix in the next version. Whenever that is.
-
-## Solution: Branching 
-
-## Problem 3
 
 Chris is working on new code for transit network skimming. Hayden is working on a new external zone design. Neither can wait for the other to be done, but they may need to edit similar files in the travel demand model.
 
 1. Flip coins to see who will go first. Surely the other person can work on something else?
 2. Create a check-out system that prevents two people from editing the code at the same time.
 
+## Solution part 1: Working copies
 
-## Solution: Distributed Branches
+Multiple developers can have their own local working copies of a repository.
 
+![](images/working_copies.svg)
+
+## Solution part 2: Branching 
+
+Different developers can work on their own branches (commit path). Then, two branches can be merged.
+
+![](images/basic_branch.png)
+
+
+## Problem 3
+
+You have started building the next version of your travel model when you get a report of a bug that needs to be fixed immediately. You have already made lots of changes to the part of the code where the bug is.
+
+1. Throw away the work you are doing on the next version so that you can fix the bug as soon as possible.
+2. Fix the bug alongside everything else, and give your users a fix in the next version. Whenever that is.
+
+## Solution: Branch-based workflow
+
+Formalize how updates are made, based on branches.
+
+!["Git Flow" development pattern.](images/git-flow.svg)
 
 
 ## Review
@@ -79,7 +91,7 @@ Chris is working on new code for transit network skimming. Hayden is working on 
 1. What problem does version control solve?
 1. Is there a project you have worked on that would benefit from version control?
 
-# Tutorial
+# Tutorial Part 1: Working with Git on Your Own
 
 <!-- The first tutorial has them create a new repository on the command line, add a README file to it, and then push to gitHub.-->
 ## Create a repository
@@ -111,9 +123,45 @@ git commit -m "Add initial README file"
 git status
 ```
 
-# Learning more
+# Tutorial Part 2: Working with others on GitHub
 
-## Tutorials
+## GitHub uses "Pull Requests"
+
+![](images/branching.webp)
+
+This helps people collaborate by formalizing discussion related to proposed changes.
+
+## Fork this repository
+
+Go to <https://github.com/gregmacfarlane/udot-gittraining>
+
+Push the "fork" button at the top-right, and fork it to your own account.
+
+## Clone this repository
+
+1. Open GitHub Desktop
+2. Clone your fork to your local computer
+
+## Make an edit
+
+1. Open the file `participants.csv`. 
+2. Add your name to the list of participants.
+3. Save, stage, commit, and push.
+
+## Open a pull request
+
+
+
+
+
+## Participants in this training
+
+```{r cloud, echo = TRUE}
+library(readr)
+read_csv("participants.csv", col_types = "c")
+```
+
+## Tutorials for Learning More
 
 Linkedin Learning / DataCamp
 
