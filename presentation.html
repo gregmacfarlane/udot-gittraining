@@ -455,7 +455,8 @@ Greg Macfarlane
 </section>
 <section id="solution-version-tracking" class="slide level2">
 <h2>Solution: Version Tracking</h2>
-</section>
+
+<img data-src="images/git-commits.png" class="r-stretch"></section>
 <section id="problem-2" class="slide level2">
 <h2>Problem 2</h2>
 <p>Chris is working on new code for transit network skimming. Hayden is working on a new external zone design. Neither can wait for the other to be done, but they may need to edit similar files in the travel demand model.</p>
@@ -466,14 +467,13 @@ Greg Macfarlane
 </section>
 <section id="solution-part-1-working-copies" class="slide level2">
 <h2>Solution part 1: Working copies</h2>
-<p>Multiple developers can have their own local working copies of a repository.</p>
-
-<img data-src="images/working_copies.svg" class="r-stretch"></section>
+<p><img data-src="images/working_copies.svg" alt="Image from Atlassian"> Multiple developers can have their own local working copies of a repository.</p>
+</section>
 <section id="solution-part-2-branching" class="slide level2">
 <h2>Solution part 2: Branching</h2>
 <p>Different developers can work on their own branches (commit path). Then, two branches can be merged.</p>
 
-<img data-src="images/basic_branch.png" class="r-stretch"></section>
+<img data-src="images/basic_branch.png" class="r-stretch quarto-figure-center"><p class="caption">Image from Atlassian</p></section>
 <section id="problem-3" class="slide level2">
 <h2>Problem 3</h2>
 <p>You have started building the next version of your travel model when you get a report of a bug that needs to be fixed immediately. You have already made lots of changes to the part of the code where the bug is.</p>
@@ -486,7 +486,7 @@ Greg Macfarlane
 <h2>Solution: Branch-based workflow</h2>
 <p>Formalize how updates are made, based on branches.</p>
 
-<img data-src="images/git-flow.svg" class="r-stretch quarto-figure-center"><p class="caption">“Git Flow” development pattern.</p></section>
+<img data-src="images/git-flow.svg" class="r-stretch quarto-figure-center"><p class="caption">“Git Flow” development pattern. Image Atlassian</p></section>
 <section id="review" class="slide level2">
 <h2>Review</h2>
 <ol type="1">
@@ -509,7 +509,7 @@ Greg Macfarlane
 <h2>Add a text file to the respository</h2>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="co"># start a README file</span></span>
 <span id="cb3-2"><a href=""></a><span class="fu">touch</span> README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Edit the file using a text editor.</p>
+<p>Edit the file using a text editor, save it, and then check to see the changes.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href=""></a><span class="co"># check the repository status</span></span>
 <span id="cb4-2"><a href=""></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
@@ -518,6 +518,14 @@ Greg Macfarlane
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href=""></a><span class="fu">git</span> add REAME.md</span>
 <span id="cb5-2"><a href=""></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial README file"</span></span>
 <span id="cb5-3"><a href=""></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="review-1" class="slide level2">
+<h2>Review</h2>
+<p>You can now keep track of changes to a local file.</p>
+<ol type="1">
+<li>What is the difference between staging changes and committing changes?</li>
+<li>How often should you commit changes?</li>
+</ol>
 </section></section>
 <section>
 <section id="tutorial-part-2-working-with-others-on-github" class="title-slide slide level1 center">
@@ -527,7 +535,7 @@ Greg Macfarlane
 <section id="github-uses-pull-requests" class="slide level2">
 <h2>GitHub uses “Pull Requests”</h2>
 
-<img data-src="images/branching.webp" class="r-stretch"><p>This helps people collaborate by formalizing discussion related to proposed changes.</p>
+<img data-src="images/branching.webp" class="r-stretch quarto-figure-center"><p class="caption">Image from GitHub</p><p>This helps people collaborate by formalizing discussion related to proposed changes.</p>
 </section>
 <section id="fork-this-repository" class="slide level2">
 <h2>Fork this repository</h2>
@@ -552,19 +560,28 @@ Greg Macfarlane
 </section>
 <section id="open-a-pull-request" class="slide level2">
 <h2>Open a pull request</h2>
-</section>
+
+<img data-src="images/pull_request.png" class="r-stretch"></section>
 <section id="participants-in-this-training" class="slide level2">
 <h2>Participants in this training</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="fu">library</span>(readr)</span>
 <span id="cb6-2"><a href=""></a><span class="fu">read_csv</span>(<span class="st">"participants.csv"</span>, <span class="at">col_types =</span> <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-  Name           
-  &lt;chr&gt;          
-1 Greg Macfarlane</code></pre>
+<pre><code># A tibble: 2 × 1
+  Name              
+  &lt;chr&gt;             
+1 Greg Macfarlane   
+2 BYU Transpo Intern</code></pre>
 </div>
 </div>
+</section>
+<section id="review-2" class="slide level2">
+<h2>Review</h2>
+<ol type="1">
+<li>What is the difference between <code>commit</code>, <code>push</code>, and <code>pull</code>?</li>
+<li>Is there a project that you want to move into GitHub for collaboration?</li>
+</ol>
 </section>
 <section id="tutorials-for-learning-more" class="slide level2">
 <h2>Tutorials for Learning More</h2>

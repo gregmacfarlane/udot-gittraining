@@ -51,6 +51,8 @@ Google docs has made this better, but still not perfect.
 
 ## Solution: Version Tracking
 
+![](images/git-commits.png)
+
 
 ## Problem 2
 
@@ -61,15 +63,15 @@ Chris is working on new code for transit network skimming. Hayden is working on 
 
 ## Solution part 1: Working copies
 
+![Image from Atlassian](images/working_copies.svg)
 Multiple developers can have their own local working copies of a repository.
 
-![](images/working_copies.svg)
 
 ## Solution part 2: Branching 
 
 Different developers can work on their own branches (commit path). Then, two branches can be merged.
 
-![](images/basic_branch.png)
+![Image from Atlassian](images/basic_branch.png)
 
 
 ## Problem 3
@@ -83,7 +85,7 @@ You have started building the next version of your travel model when you get a r
 
 Formalize how updates are made, based on branches.
 
-!["Git Flow" development pattern.](images/git-flow.svg)
+!["Git Flow" development pattern. Image Atlassian](images/git-flow.svg)
 
 
 ## Review
@@ -108,7 +110,8 @@ git init
 # start a README file
 touch README.md
 ```
-Edit the file using a text editor. 
+Edit the file using a text editor, save it, and then check to see the changes.
+
 
 ```sh
 # check the repository status
@@ -123,11 +126,18 @@ git commit -m "Add initial README file"
 git status
 ```
 
+## Review
+You can now keep track of changes to a local file.
+
+1. What is the difference between staging changes and committing changes?
+2. How often should you commit changes?
+
+
 # Tutorial Part 2: Working with others on GitHub
 
 ## GitHub uses "Pull Requests"
 
-![](images/branching.webp)
+![Image from GitHub](images/branching.webp)
 
 This helps people collaborate by formalizing discussion related to proposed changes.
 
@@ -152,9 +162,7 @@ Push the "fork" button at the top-right, and fork it to your own account.
 
 ## Open a pull request
 
-
-
-
+![](images/pull_request.png)
 
 ## Participants in this training
 
@@ -162,6 +170,11 @@ Push the "fork" button at the top-right, and fork it to your own account.
 library(readr)
 read_csv("participants.csv", col_types = "c")
 ```
+
+## Review 
+
+1. What is the difference between `commit`, `push`, and `pull`?
+2. Is there a project that you want to move into GitHub for collaboration?
 
 ## Tutorials for Learning More
 
