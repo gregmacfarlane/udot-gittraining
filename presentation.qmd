@@ -4,6 +4,7 @@ author: "Greg Macfarlane"
 format: 
   revealjs:
     logo: images/byu_cce.png
+    self-contained: true
 ---
 
 
